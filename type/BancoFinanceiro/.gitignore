@@ -1,0 +1,52 @@
+# Arquivo .gitignore para projetos TypeScript (Node.js) e Java
+
+# Logs e arquivos temporários
+# ===================================
+*.log
+npm-debug.log*
+yarn-error.log*
+hs_err_pid*
+
+# Arquivos de Sistema Operacional e Editores de Código
+# ===================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.iml
+
+# Arquivos de Ambiente (MUITO IMPORTANTE PARA SEGURANÇA)
+# ===================================
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# TypeScript / Node.js
+# ===================================
+# Dependências
+node_modules/
+
+# Código JavaScript compilado
+dist/
+build/
+out/
+
+# Caches e outros
+.npm/
+.yarn/
+.ts-node/
+
+# Java
+# ===================================
+# Código Java compilado
+*.class
+
+# Saídas de Build (Maven e Gradle)
+target/
+# A pasta 'build/' já está listada na seção de TS, servindo para ambos.
+
+# Pacotes gerados
+*.jar
+*.war
+*.ear

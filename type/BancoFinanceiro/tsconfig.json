@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    /* Estrutura do Projeto */
+    "rootDir": "./src", // A pasta raiz do seu código TypeScript
+    "outDir": "./dist", // A pasta onde o JavaScript compilado será salvo
+
+    /* Ambiente e Módulos */
+    "module": "NodeNext", // Perfeito para projetos Node.js modernos
+    "moduleResolution": "NodeNext", // Necessário para acompanhar o "module"
+    "target": "ES2022", // Uma versão moderna e estável do JavaScript
+    "lib": ["ES2022"], // Bibliotecas padrão do JavaScript para o target
+    "types": ["node"], // Inclui os tipos globais do Node.js (process, console, etc.)
+
+    /* Configurações Recomendadas */
+    "strict": true, // Ativa todas as checagens rigorosas de tipo (MUITO importante)
+    "esModuleInterop": true, // Melhora a compatibilidade entre módulos CommonJS e ES
+    "skipLibCheck": true, // Pula a checagem de tipos em bibliotecas de terceiros
+    "forceConsistentCasingInFileNames": true, // Evita erros de casing entre sistemas operacionais
+    "resolveJsonModule": true, // Permite importar arquivos .json
+
+    /* Saídas de Compilação */
+    "sourceMap": true, // Gera arquivos .map para facilitar o debug
+    "removeComments": true // Remove comentários do código JavaScript final
+  },
+  "include": ["src/**/*"], // Diz ao TypeScript para compilar tudo que estiver na pasta 'src'
+  "exclude": ["node_modules"] // Ignora a pasta 'node_modules'
+}
